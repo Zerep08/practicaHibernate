@@ -40,8 +40,8 @@ public class Persona {
      @Column(name="Telefono")
     private String Telefono;
     
-     @ManyToOne
-     @JoinColumn(name="idTipoPersona")
+     @ManyToOne //Definimos la relacion que existe entre esta tabla y Tipo de persona
+     @JoinColumn(name="idTipoPersona") //El join sirve para definir que columna hara la conexion con la otra tabla
     private TipoPersona tipoPersona;
 
     /**
